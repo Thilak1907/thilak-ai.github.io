@@ -59,7 +59,7 @@ const Hero = () => {
                         className="flex flex-wrap justify-center md:justify-start gap-4"
                     >
                         <a
-                            href={personalInfo.resumeUrl}
+                            href={getAssetPath(personalInfo.resumeUrl)}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-8 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent-hover transition-colors shadow-lg shadow-accent/25 flex items-center gap-2"
@@ -67,7 +67,7 @@ const Hero = () => {
                             <FaFileAlt /> View Resume
                         </a>
                         <a
-                            href={personalInfo.resumeUrl}
+                            href={getAssetPath(personalInfo.resumeUrl)}
                             download
                             className="px-8 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors shadow-lg flex items-center gap-2"
                         >
