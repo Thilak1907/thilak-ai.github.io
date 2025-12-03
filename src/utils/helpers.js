@@ -4,11 +4,6 @@ export const getAssetPath = (path) => {
 
     let baseUrl = import.meta.env.BASE_URL;
 
-    // Fallback for GitHub Pages if BASE_URL is '/' in production
-    if (import.meta.env.PROD && baseUrl === '/') {
-        baseUrl = '/thilak-ai.github.io/';
-    }
-
     // Remove leading slash from path if it exists to avoid double slashes
     const cleanPath = path.startsWith('/') ? path.slice(1) : path;
 
