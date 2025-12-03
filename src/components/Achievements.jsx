@@ -3,6 +3,7 @@ import Section from './Section';
 import { achievements } from '../data/content';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { getAssetPath } from '../utils/helpers';
 
 const Achievements = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,7 +32,7 @@ const Achievements = () => {
                             {/* Image Container */}
                             <div className="h-[75%] w-full relative overflow-hidden bg-gray-100 dark:bg-gray-900 flex items-center justify-center p-2">
                                 <img
-                                    src={achievements[currentIndex].image}
+                                    src={getAssetPath(achievements[currentIndex].image)}
                                     alt={achievements[currentIndex].title}
                                     className="w-full h-full object-contain"
                                 />

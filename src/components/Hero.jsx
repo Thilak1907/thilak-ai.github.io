@@ -5,6 +5,7 @@ import { personalInfo } from '../data/content';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt, FaDownload } from 'react-icons/fa';
 
 import { SiGooglescholar, SiIeee, SiScopus } from 'react-icons/si';
+import { getAssetPath } from '../utils/helpers';
 
 const Hero = () => {
     return (
@@ -85,7 +86,7 @@ const Hero = () => {
                         <div className="absolute inset-0 bg-accent/20 rounded-full blur-3xl animate-pulse"></div>
                         <div className="relative w-full h-full bg-gradient-to-br from-accent to-purple-600 rounded-full p-1 shadow-2xl">
                             <div className="w-full h-full bg-white dark:bg-secondary rounded-full overflow-hidden flex items-center justify-center">
-                                <img src="/profile.jpg" alt="Thilak Kumar V" className="w-full h-full object-cover" />
+                                <img src={getAssetPath("/profile.jpg")} alt="Thilak Kumar V" className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </motion.div>

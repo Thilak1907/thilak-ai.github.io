@@ -2,13 +2,14 @@ import React from 'react';
 import Section from './Section';
 import { education } from '../data/content';
 import { FaGraduationCap } from 'react-icons/fa';
+import { getAssetPath } from '../utils/helpers';
 
 const EducationCard = ({ edu }) => (
     <div className="bg-white dark:bg-secondary p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-4 items-start border-l-4 border-accent h-full">
         <div className="flex-shrink-0">
             {edu.image ? (
                 <img
-                    src={edu.image}
+                    src={getAssetPath(edu.image)}
                     alt={edu.institution}
                     className="w-20 h-20 object-contain bg-white rounded-lg p-1 shadow-sm border border-gray-100"
                 />

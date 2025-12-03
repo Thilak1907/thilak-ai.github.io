@@ -3,6 +3,7 @@ import Section from './Section';
 import { projects } from '../data/content';
 import { FaGithub } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import { getAssetPath } from '../utils/helpers';
 
 const Projects = () => {
     return (
@@ -21,7 +22,7 @@ const Projects = () => {
                         >
                             <div className="h-48 bg-gray-200 dark:bg-gray-700 flex items-center justify-center relative overflow-hidden group">
                                 <img
-                                    src={project.image}
+                                    src={getAssetPath(project.image)}
                                     alt={project.title}
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
