@@ -18,7 +18,7 @@ export const education = [
         degree: "B.Tech in Artificial Intelligence and Machine Learning",
         institution: "Rajalakshmi Engineering College, Chennai",
         year: "2022 – 2026",
-        details: "CGPA: 7.74/10",
+        details: "CGPA: 8.02/10",
         image: "/education/rec_logo.png"
     },
     {
@@ -39,23 +39,32 @@ export const education = [
 
 export const skills = {
     Languages: ["Python", "Java", "SQL", "JavaScript", "HTML/CSS"],
-    Frameworks: ["TensorFlow", "PyTorch", "Scikit-learn", "OpenCV", "React", "Flask"],
-    Tools: ["MongoDB", "Firebase", "Git", "Power BI", "Docker", "FastAPI", "MLflow", "ONNX Runtime", "Hugging Face Spaces"],
+    Frameworks: ["TensorFlow", "PyTorch", "Scikit-learn", "OpenCV", "React", "NextJS", "NestJS", "Flask"],
+    Tools: ["MongoDB", "Git", "Docker", "FastAPI", "MLflow", "Comfy UI", "Runpod", "Azure", "Hugging Face Spaces"],
     Concepts: ["Machine Learning", "Deep Learning", "NLP", "Computer Vision", "Data Analytics", "RPA", "MLOps"]
 };
 
 export const experience = [
     {
+        role: "AI Engineer",
+        company: "SRY Labs",
+        duration: "December 2025 – Present",
+        description: "Architected and deployed complex AI workflows utilizing ComfyUI and RunPod. Developed scalable backends using NestJS and Python FastAPI (Hexagonal Architecture) to power an OpenAI-integrated chatbot and custom embedding models. Engineered full-stack web applications with Next.js and containerized the entire ecosystem using Docker.",
+        image: "/experience/SRY Labs.png"
+    },
+    {
         role: "Research Intern",
         company: "NIT Silchar",
         duration: "June 2025 – August 2025",
         description: "Contributed to 'Explainable Forecasting for Patient Vital Sign Monitoring'. Developed an AI-driven healthcare framework integrating physiological data forecasting with emotion-based pain recognition. Utilized Random Forest, Gradient Boosting, and MobileNetV2 models, incorporating SHAP and Grad-CAM for explainability.",
+        image: "/experience/385063-nit-silchar-logo.avif"
     },
     {
         role: "Internship Trainee",
         company: "AEROKNOTZ",
         duration: "July 2024",
-        description: "Gained hands-on experience in drone technology, IoT, automation, and AI & ML in UAV systems. Explored autonomous navigation, object detection, and intelligent decision-making."
+        description: "Gained hands-on experience in drone technology, IoT, automation, and AI & ML in UAV systems. Explored autonomous navigation, object detection, and intelligent decision-making.",
+        image: "/experience/aeroknotz_drones_logo.jpeg"
     }
 ];
 
@@ -264,7 +273,7 @@ export const stats = [
     { label: "AI Projects", value: "6+", sub: "ML / DL / NLP" },
     { label: "Research Internship", value: "1", sub: "NIT Silchar" },
     { label: "Experience", value: "1+ Year", sub: "in ML/DL/NLP" },
-    { label: "CGPA", value: "7.74", sub: "Consistent Academic Record" }
+    { label: "CGPA", value: "8.02", sub: "Consistent Academic Record" }
 ];
 
 export const certifications = [
